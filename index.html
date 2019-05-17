@@ -1,11 +1,23 @@
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Index</title>
     <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="sal.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+            $(document).ready(function(){
+                $(".buttons").click(function(){
+                    $("body").css("background-image","none");
+                    $("body").css("background-color","#d8dcd6");
+                    $("body").css("overflow-y","scroll");
+                    $(".main-page").css("display","none");
+                    $(".star-background").css("display","none");
+                    $(".important").css("visibility","visible");
+                });
+            });    
+    </script>
 </head>
 <body>
         <div class="star-background">
@@ -34,7 +46,7 @@
                 <button class="buttons"
                 data-sal="flip-down"
                 data-sal-delay="300"
-                data-sal-easing="ease-out">Let's Go</button>
+                data-sal-easing="ease-out"><a href="main.html">Discover</a></button>
                 
                 <span id="copyright"
                         data-sal="slide-left"
@@ -43,7 +55,29 @@
                         Copyright © 2019 Aniket Chandanshive. All rights reserved.
                 </span>
         </div>
+
+        <div class="important">
+                <section id="intro">
+                        <img src="cats1.jpg">
+                        <div class="introflex">
+                                <h1>About Me</h1>
+                                <hr>
+                                <p>Inventore laudantium nulla eum impedit dolor. Sapiente deserunt vitae earum eaque quis ipsum, cum aut delectus iste amet vel similique est quibusdam dignissimos error sit. Commodi hic dolorem aspernatur soluta, fugit atque sapiente possimus pariatur minima laborum odit, quae, inventore quia quam repellat. Eaque possimus non sed temporibus voluptate. Nemo sed soluta deserunt blanditiis reiciendis! Cum atque ipsam, modi harum rem architecto quos exercitationem minima veniam nesciunt quo consequatur quam ex quas!</p>
+                        </div>
+                        </section>
+                        
+                        <nav>
+                                <div class="container">
+                                        <a href="">Home</a>
+                                        <a href="">Home</a>
+                                        <a href=""><img src="pallete.png"></a>
+                                        <a href="">Home</a>
+                                        <a href="">Home</a>
+                                </div>           
+                        </nav>
         
+        </div>
+
         <script src="sal.js"></script>
         <script>
                 sal();

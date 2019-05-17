@@ -1,6 +1,6 @@
 body{
-    background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%2300d60b' stroke-width='100' stroke-opacity='0.08' %3E%3Ccircle fill='%23000000' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23020b03' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23041606' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23062109' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23082c0c' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230b370f' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%230d4212' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%230f4d15' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23115818' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2313621b' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23156d1e' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23177821' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23198324' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%231c8e27' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%231e992a' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2320a42d' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%2322af30' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%2324ba33' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #4d4d4d;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%235d5d5d' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%236e6e6e' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%237e7e7e' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%238e8e8e' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%239e9e9e' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23afafaf' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23bfbfbf' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: cover;
     overflow:hidden;
@@ -11,7 +11,6 @@ background-size: cover;
     font-family: 'carbon'; 
     src: URL('./carbon.ttf') format('truetype');
 }
-
 
 @font-face
 {
@@ -629,6 +628,11 @@ main #subtitle:after{
     color:black;
 }
 
+.buttons a{
+    text-decoration: none;
+    color:black;
+}
+
 .buttons:hover{
     cursor:pointer;
     background:white;
@@ -644,4 +648,123 @@ main #subtitle:after{
     left:71%;
     font-family:monospace;
     color:white;
+}
+
+.important{
+    visibility: hidden;
+}
+
+#intro img{
+    width:50%;
+    height:50%;
+    float:left;
+    clip-path: circle(35% at 50% 50%);
+}
+
+#intro img:hover{
+    filter: grayscale(100%);
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.introflex{
+    display:flex;
+    flex-direction: column;
+}
+
+.introflex h1, .introflex hr, .introflex p{
+    width:60%;
+}
+
+.introflex h1{
+    font-size:2em;
+    height:20px;   
+    color:#262626;
+}
+
+.introflex p{
+    color:#737373;
+}
+
+.introflex hr{
+    height:5px;
+    background:#0066ff;
+    margin-left:1%;
+    border:1px solid #0066ff;
+}
+
+.introflex h1::after , .introflex h1::before{
+    content:'×';
+    font-size:0.5em;
+    margin:10px;
+}
+
+.introflex p{
+    width:80%;
+    font-family:'kaushan';
+    font-size:0.8em;
+}
+
+#intro{
+    font-family:'carbon';
+    font-size:1.5em;   
+    margin-top:5%; 
+}
+
+nav{
+    margin-top:8%;
+    height:10%;
+    width:101%;
+    position:fixed;
+    background:#bfbfbf;
+    margin-left:-1%;
+    display:flex;
+    flex-direction:rows;
+}
+
+nav a{
+    text-decoration: none;
+    font-size:2em;
+    height:20px;   
+    color:#262626;
+    font-family:'carbon';
+    margin-left:3%;
+    margin-top:1%;
+}
+
+.container{
+    margin-top:20px;
+    width:100%;
+    margin-left:34.5%;
+}
+
+nav a:hover{
+    color:blue;
+
+}
+
+nav::after, nav::before{
+    content:'';
+    width:50px;
+    height:50px;
+    background:#bfbfbf;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top:70%;
+}
+
+nav::after{
+    position: absolute;
+    left:50%;
+    transform: rotate(90deg);
+}
+
+nav::before{
+    position: absolute;
+    right:50%;
+    transform: rotate(-90deg);
+}
+
+nav a img{
+    height:32px;    
+    width:32px;
 }
