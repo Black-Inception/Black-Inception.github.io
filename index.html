@@ -16,6 +16,11 @@
                     $(".star-background").css("display","none");
                     $(".important").css("visibility","visible");
                 });
+
+                $(".heart").click(function(){
+                        $(this).css("color","red");
+                        $(this).css("font-size","2.2em");
+                });
             });    
     </script>
 </head>
@@ -56,7 +61,7 @@
                 </span>
         </div>
 
-        <div class="important">
+        <div class="important" id="about-id">
                 <section id="intro">
                         <img src="cats1.jpg">
                         <div class="introflex">
@@ -64,23 +69,66 @@
                                 <hr>
                                 <p>Inventore laudantium nulla eum impedit dolor. Sapiente deserunt vitae earum eaque quis ipsum, cum aut delectus iste amet vel similique est quibusdam dignissimos error sit. Commodi hic dolorem aspernatur soluta, fugit atque sapiente possimus pariatur minima laborum odit, quae, inventore quia quam repellat. Eaque possimus non sed temporibus voluptate. Nemo sed soluta deserunt blanditiis reiciendis! Cum atque ipsam, modi harum rem architecto quos exercitationem minima veniam nesciunt quo consequatur quam ex quas!</p>
                         </div>
-                        </section>
+                </section>
                         
-                        <nav>
-                                <div class="container">
-                                        <a href="">Home</a>
-                                        <a href="">Home</a>
-                                        <a href=""><img src="pallete.png"></a>
-                                        <a href="">Home</a>
-                                        <a href="">Home</a>
-                                </div>           
-                        </nav>
-        
+                <nav id="navbar">
+                        <div class="container">
+                                <a href="#about-id">About</a>
+                                <a href="#gallery-id">Gallery</a>
+                                <a href=""><img src="pallete.png"></a>
+                                <a href="">Code</a>
+                                <a href="">Contact</a>
+                        </div>           
+                </nav>
+
+                <div class="gallery" id="gallery-id">
+                       <div class="post-one">
+                               <h1>Art Gallery</h1>
+                               <hr>
+                       </div> 
+                       <div class="post-two">
+                               <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                                <a class="heart">❤</a>
+                        </div> 
+                       <div class="post-three">
+                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                                <a class="heart">❤</a>
+                        </div> 
+                       <div class="post-four">
+                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                                <a class="heart">❤</a>
+                        </div> 
+                       <div class="post-five">
+                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                                <a class="heart">❤</a>
+                        </div> 
+                       <div class="post-six">
+                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                                <a class="heart">❤</a>
+                        </div>  
+                </div>
         </div>
 
         <script src="sal.js"></script>
         <script>
                 sal();
+
+                window.onscroll = function(){ fixbar() };
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+
+                function fixbar(){
+                        if(window.pageYOffset >= sticky)
+                                navbar.classList.add("sticky");
+                        else
+                                navbar.classList.remove("sticky");
+                }
+
         </script>
 </body>
 </html>
