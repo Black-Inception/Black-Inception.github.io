@@ -15,11 +15,27 @@
                     $(".main-page").css("display","none");
                     $(".star-background").css("display","none");
                     $(".important").css("visibility","visible");
+                  
                 });
 
                 $(".heart").click(function(){
                         $(this).css("color","red");
                         $(this).css("font-size","2.2em");
+                });
+
+                $("#mail").click(function(){
+                        $(this).slideUp();
+                        $("#mail-box").fadeToggle("slow");
+                        $("#call-box").css("display","none");
+                        $("#call").css("display","block");
+                        $("#call").css("left","900px");
+                });
+
+                $("#call").click(function(){
+                        $(this).slideUp();
+                        $("#call-box").fadeIn("slow");
+                        $("#mail-box").css("display","none");
+                        $("#mail").css("display","block");
                 });
             });    
     </script>
@@ -73,11 +89,11 @@
                         
                 <nav id="navbar">
                         <div class="container">
-                                <a href="#about-id">About</a>
-                                <a href="#gallery-id">Gallery</a>
+                                <a href="#about-id">            About Me</a>
+                                <a href="#gallery-id">          Gallery </a>
                                 <a href=""><img src="pallete.png"></a>
-                                <a href="">Code</a>
-                                <a href="">Contact</a>
+                                <a href="">                     For Nerds</a>
+                                <a href="#contacts-id">                     Contact </a>
                         </div>           
                 </nav>
 
@@ -89,7 +105,8 @@
                        <div class="post-two">
                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
-                                <a class="heart">❤</a>
+                               <br>
+                               <a class="heart">❤</a>
                         </div> 
                        <div class="post-three">
                                 <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
@@ -99,6 +116,7 @@
                        <div class="post-four">
                                 <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                                <br>
                                 <a class="heart">❤</a>
                         </div> 
                        <div class="post-five">
@@ -109,9 +127,54 @@
                        <div class="post-six">
                                 <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                                <br>
                                 <a class="heart">❤</a>
                         </div>  
                 </div>
+
+                <div class="nerds">
+
+                </div>
+
+                <div class="contact">
+                        <img id="mail" src="mail.png">
+                        <img id="call" src="call.png">
+
+                        <div id="mail-box">
+                                <h1>EMAIL</h1>
+                                <hr>
+
+                                <form>
+                                        <label>To</label>
+                                        <input id="email" type="email" placeholder="kinganiket9601387501@gmail.com" readonly>
+                                        <br><br>
+                                        <label>From</label>
+                                        <input type="email" placeholder="Email">
+                                        <br><br>
+                                        <label>Body</label>
+                                        <input type="text" id="body" placeholder="Body of your mail">
+                                        <br><br>
+                                        <button class="submit" type="submit">SEND</button>
+                                </form>
+                        </div>
+                        
+                        <a id="contacts-id"></a>
+                        <div id="call-box">
+                                <h1>Lets TALK </h1>
+                                <hr>
+                                <form>
+                                        <br><br><br>
+                                        <label>Cell Phone</label>
+                                        <input type="number" placeholder="1234567890" readonly>
+                                        <br><br>
+                                        <label>Telephone</label>
+                                        <input type="text" placeholder="831-428351" readonly>
+                                </form>
+                        </div>
+                </div>
+
+                <aside>
+                </aside>
         </div>
 
         <script src="sal.js"></script>
