@@ -4,6 +4,7 @@
     <title>Index</title>
     <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="sal.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type="text/javascript" language="javascript">
@@ -15,7 +16,7 @@
                     $(".main-page").css("display","none");
                     $(".star-background").css("display","none");
                     $(".important").css("visibility","visible");
-                  
+                        alert("CLICK ON IMAGES TO VIEW THEM :D ");
                 });
 
                 $(".heart").click(function(){
@@ -67,7 +68,7 @@
                 <button class="buttons"
                 data-sal="flip-down"
                 data-sal-delay="300"
-                data-sal-easing="ease-out"><a href="main.html">Discover</a></button>
+                data-sal-easing="ease-out"><a>Discover</a></button>
                 
                 <span id="copyright"
                         data-sal="slide-left"
@@ -78,21 +79,25 @@
         </div>
 
         <div class="important" id="about-id">
-                <section id="intro">
-                        <img src="cats1.jpg">
+                <aside id="top"></aside>
+                <div id="intro">
+                        <div id="about-img">
+                                <img src="about1.jpg">
+                        </div>
+                        
                         <div class="introflex">
                                 <h1>About Me</h1>
                                 <hr>
-                                <p>Inventore laudantium nulla eum impedit dolor. Sapiente deserunt vitae earum eaque quis ipsum, cum aut delectus iste amet vel similique est quibusdam dignissimos error sit. Commodi hic dolorem aspernatur soluta, fugit atque sapiente possimus pariatur minima laborum odit, quae, inventore quia quam repellat. Eaque possimus non sed temporibus voluptate. Nemo sed soluta deserunt blanditiis reiciendis! Cum atque ipsam, modi harum rem architecto quos exercitationem minima veniam nesciunt quo consequatur quam ex quas!</p>
+                                <p>Hi ☼, my name is Aniket Chandanshive, currently a ∎ Bachelor in Computer Applications - Second Year student ∎ Academically, I'm interested in developing and designing websites and making sketches mostly ∎ It brings out the happiness inside me which is obviously gets suppressed ↡ during weekdays ; if you're reading this ∷ you should do that too ! Do what relieves your stress and makes you forget about the world ! ☁</p>
                         </div>
-                </section>
+                        <br><br><br><br>
+                </div>
                         
                 <nav id="navbar">
                         <div class="container">
                                 <a href="#about-id">            About Me</a>
-                                <a href="#gallery-id">          Gallery </a>
                                 <a href=""><img src="pallete.png"></a>
-                                <a href="">                     For Nerds</a>
+                                <a href="#gallery-id">          Gallery </a>
                                 <a href="#contacts-id">                     Contact </a>
                         </div>           
                 </nav>
@@ -102,41 +107,38 @@
                                <h1>Art Gallery</h1>
                                <hr>
                        </div> 
-                       <div class="post-two">
-                               <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
-                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                       <div data-aos="flip-down" class="post-two">
+                               <img src="space.jpg" onClick="window.open('space.jpg');">
+                               <p>We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one we intend to win, and the others, too</p>
                                <br>
                                <a class="heart">❤</a>
                         </div> 
-                       <div class="post-three">
-                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                       <div data-aos="fade-left" class="post-three">
+                                <img src="mask.jpg" onClick="window.open('mask.jpg');">
+                                <p> When we are sad about something in our personal life, most of the time we cover it with a fake emotion. We most often put a fake smile on our faces and act like nothing is wrong with us. We don't want to be made fun of or ridiculed for something that might hurt our cool image. We don't want others to view us as weak, so we put up an emotional barrier, a mask, to block the emotions so that no one will know how we feel. We put up this barrier to keep people from crossing into something that we don't want them to know, and when they cross the line, we lash out.</p>
+                                <br><br><br>
                                 <a class="heart">❤</a>
                         </div> 
-                       <div class="post-four">
-                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                       <div data-aos="fade-right" class="post-four">
+                                <img src="singers.jpg" onClick="window.open('singers.jpg');">
+                                <p>The only way you can beat my crazy was by doing something crazy yourself. Thank you. I love you. I knew it the minute I met you. I’m sorry it took so long for me to catch up. I just got stuck.</p>
                                 <br>
                                 <a class="heart">❤</a>
                         </div> 
-                       <div class="post-five">
-                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                       <div data-aos="fade-left" class="post-five">
+                                <img src="friends.jpg" onClick="window.open('friends.jpg');">
+                                <p>In a real friendship that has matured over time, there are not even any expectations between two friends. You love your friend whatever may happen, and you love not for any reason or to get anything in return from your friend. And this is the sentiment shared by your friend too. Such a friendship is a real friendship and it gives true joy and contentment. Even troubles and miseries that life may bring seem insignificant when you have such a friendship to bank on.</p>
                                 <a class="heart">❤</a>
                         </div> 
-                       <div class="post-six">
-                                <img src="cats1.jpg" onClick="window.open('cats1.jpg');">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum error repellendus, quidem, expedita similique cupiditate accusantium maiores dolore placeat dolores quam voluptates saepe, minima odit cumque dolorem eum quod? Assumenda eaque distinctio sit officiis sunt eos, illum voluptatibus minima ducimus, praesentium ipsa consectetur. Porro delectus debitis recusandae expedita eligendi illum!</p>
+                       <div data-aos="fade-right" class="post-six">
+                                <img src="mario.jpg" onClick="window.open('mario.jpg');">
+                                <p>There is no replacement of hard work for prosperity. No matter how talented you are, you’ve to work hard to excel in life. It’s not about competition only, it’s also about determination and consistency. We need to work hard for prosperity because success demands dedication. No matter which profession you choose which career you aim at, you’ve to work hard to perform the best and make it to the top.</p>
                                 <br>
                                 <a class="heart">❤</a>
                         </div>  
                 </div>
 
-                <div class="nerds">
-
-                </div>
-
-                <div class="contact">
+                <div data-aos="zoom-out" class="contact">
                         <img id="mail" src="mail.png">
                         <img id="call" src="call.png">
 
@@ -154,7 +156,7 @@
                                         <label>Body</label>
                                         <input type="text" id="body" placeholder="Body of your mail">
                                         <br><br>
-                                        <button class="submit" type="submit">SEND</button>
+                                        <button class="submit" href="" type="submit">SEND</button>
                                 </form>
                         </div>
                         
@@ -174,12 +176,16 @@
                 </div>
 
                 <aside>
+                        <br>
+                        <p>Designed carefully with HTML, CSS and jQuery</p>
                 </aside>
         </div>
 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="sal.js"></script>
         <script>
                 sal();
+                AOS.init();
 
                 window.onscroll = function(){ fixbar() };
                 var navbar = document.getElementById("navbar");
