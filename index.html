@@ -1,203 +1,67 @@
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="style.scss">
-    <link rel="stylesheet" href="sal.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <head>
+        <title>Potattoo</title>
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" language="javascript">
-            $(document).ready(function(){
-                $(".buttons").click(function(){
-                    $("body").css("background-image","none");
-                    $("body").css("background-color","#d8dcd6");
-                    $("body").css("overflow-y","scroll");
-                    $(".main-page").css("display","none");
-                    $(".star-background").css("display","none");
-                    $(".important").css("visibility","visible");
-                        alert("CLICK ON IMAGES TO VIEW THEM :D ");
-                });
+    <body>
 
-                $(".heart").click(function(){
-                        $(this).css("color","red");
-                        $(this).css("font-size","2.2em");
-                });
-
-                $("#mail").click(function(){
-                        $(this).slideUp();
-                        $("#mail-box").fadeToggle("slow");
-                        $("#call-box").css("display","none");
-                        $("#call").css("display","block");
-                        $("#call").css("left","900px");
-                });
-
-                $("#call").click(function(){
-                        $(this).slideUp();
-                        $("#call-box").fadeIn("slow");
-                        $("#mail-box").css("display","none");
-                        $("#mail").css("display","block");
-                });
-            });    
-    </script>
-</head>
-<body>
-        <div class="star-background">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="star3"></div>
+        <div class="tooltips text-danger">
+                <span class="tool" id="menu-icon">MENU</span>
+                <p></p>
+                <span class="tool" id="order-icon">ORDER</span>
+                <p></p>
+                <span class="tool" id="reach-icon">REACH</span>
         </div>
 
-        <div class="main-page">
-                <main>
-                        <p id="title"
-                        data-sal="slide-left"
-                        data-sal-delay="300"
-                        data-sal-easing="ease-out">
-                             BLACK INCEPTION
-                        </p>
-                        <p id="subtitle"
-                        data-sal-duration="500"
-                        data-sal="slide-up"
-                        data-sal-delay="300"
-                        data-sal-easing="ease-out-bounce">
-                            Art is Where Work Meets Love 
-                        </p>
-                </main>
-                
-                <button class="buttons"
-                data-sal="flip-down"
-                data-sal-delay="300"
-                data-sal-easing="ease-out"><a>Discover</a></button>
-                
-                <span id="copyright"
-                        data-sal="slide-left"
-                        data-sal-delay="300"
-                        data-sal-easing="ease-out">
-                        Copyright © 2019 Aniket Chandanshive. All rights reserved.
-                </span>
+        <nav>
+            <button class="box"></button>
+            <div class="line"></div>
+            <button class="box"></button>
+            <div class="line"></div>
+            <button class="box"></button>
+        </nav>
+        <!--<embed src="song.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />-->
+        <div id="fixed-bar" class="mt-4">
+            <a href="#fixed-bar">
+                <h4> <span class="text-danger">🍟</span> Zotato</h4>
+            </a>
         </div>
 
-        <div class="important" id="about-id">
-                <aside id="top"></aside>
-                <div id="intro">
-                        <div id="about-img">
-                                <img src="about1.jpg">
-                        </div>
-                        
-                        <div class="introflex">
-                                <h1>About Me</h1>
-                                <hr>
-                                <p>Hi ☼, my name is Aniket Chandanshive, currently a ∎ Bachelor in Computer Applications - Second Year student ∎ Academically, I'm interested in developing and designing websites and making sketches mostly ∎ It brings out the happiness inside me which is obviously gets suppressed ↡ during weekdays ; if you're reading this ∷ you should do that too ! Do what relieves your stress and makes you forget about the world ! ☁</p>
-                        </div>
-                        <br><br><br><br>
-                </div>
-                        
-                <nav id="navbar">
-                        <div class="container">
-                                <a href="#about-id">            About Me</a>
-                                <a href=""><img src="pallete.png"></a>
-                                <a href="#gallery-id">          Gallery </a>
-                                <a href="#contacts-id">                     Contact </a>
-                        </div>           
-                </nav>
+        <br><br><br><br>
 
-                <div class="gallery" id="gallery-id">
-                       <div class="post-one">
-                               <h1>Art Gallery</h1>
-                               <hr>
-                       </div> 
-                       <div data-aos="flip-down" class="post-two">
-                               <img src="space.jpg" onClick="window.open('space.jpg');">
-                               <p>We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one we intend to win, and the others, too</p>
-                               <br>
-                               <a class="heart">❤</a>
-                        </div> 
-                       <div data-aos="fade-left" class="post-three">
-                                <img src="mask.jpg" onClick="window.open('mask.jpg');">
-                                <p> When we are sad about something in our personal life, most of the time we cover it with a fake emotion. We most often put a fake smile on our faces and act like nothing is wrong with us. We don't want to be made fun of or ridiculed for something that might hurt our cool image. We don't want others to view us as weak, so we put up an emotional barrier, a mask, to block the emotions so that no one will know how we feel. We put up this barrier to keep people from crossing into something that we don't want them to know, and when they cross the line, we lash out.</p>
-                                <br><br><br>
-                                <a class="heart">❤</a>
-                        </div> 
-                       <div data-aos="fade-right" class="post-four">
-                                <img src="singers.jpg" onClick="window.open('singers.jpg');">
-                                <p>The only way you can beat my crazy was by doing something crazy yourself. Thank you. I love you. I knew it the minute I met you. I’m sorry it took so long for me to catch up. I just got stuck.</p>
-                                <br>
-                                <a class="heart">❤</a>
-                        </div> 
-                       <div data-aos="fade-left" class="post-five">
-                                <img src="friends.jpg" onClick="window.open('friends.jpg');">
-                                <p>In a real friendship that has matured over time, there are not even any expectations between two friends. You love your friend whatever may happen, and you love not for any reason or to get anything in return from your friend. And this is the sentiment shared by your friend too. Such a friendship is a real friendship and it gives true joy and contentment. Even troubles and miseries that life may bring seem insignificant when you have such a friendship to bank on.</p>
-                                <a class="heart">❤</a>
-                        </div> 
-                       <div data-aos="fade-right" class="post-six">
-                                <img src="mario.jpg" onClick="window.open('mario.jpg');">
-                                <p>There is no replacement of hard work for prosperity. No matter how talented you are, you’ve to work hard to excel in life. It’s not about competition only, it’s also about determination and consistency. We need to work hard for prosperity because success demands dedication. No matter which profession you choose which career you aim at, you’ve to work hard to perform the best and make it to the top.</p>
-                                <br>
-                                <a class="heart">❤</a>
-                        </div>  
-                </div>
+        <div class="slideshow">
+            <img class="slide" src="./sprite/potato1.jpg">
+            <img class="slide" src="./sprite/potato2.jpg">
+            <img class="slide" src="./sprite/potato3.jpg">
+            <img class="slide" src="./sprite/potato4.jpg">
 
-                <div data-aos="zoom-out" class="contact">
-                        <img id="mail" src="mail.png">
-                        <img id="call" src="call.png">
-
-                        <div id="mail-box">
-                                <h1>EMAIL</h1>
-                                <hr>
-
-                                <form>
-                                        <label>To</label>
-                                        <input id="email" type="email" placeholder="kinganiket9601387501@gmail.com" readonly>
-                                        <br><br>
-                                        <label>From</label>
-                                        <input type="email" placeholder="Email">
-                                        <br><br>
-                                        <label>Body</label>
-                                        <input type="text" id="body" placeholder="Body of your mail">
-                                        <br><br>
-                                        <button class="submit" href="" type="submit">SEND</button>
-                                </form>
-                        </div>
-                        
-                        <a id="contacts-id"></a>
-                        <div id="call-box">
-                                <h1>Lets TALK </h1>
-                                <hr>
-                                <form>
-                                        <br><br><br>
-                                        <label>Cell Phone</label>
-                                        <input type="number" placeholder="1234567890" readonly>
-                                        <br><br>
-                                        <label>Telephone</label>
-                                        <input type="text" placeholder="831-428351" readonly>
-                                </form>
-                        </div>
-                </div>
-
-                <aside>
-                        <br>
-                        <p>Designed carefully with HTML, CSS and jQuery</p>
-                </aside>
+            <div id="not-slide" class="mt-5">
+                    <h1>The Potato Paradise</h1>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vitae eos deserunt, eligendi voluptate nostrum!
+                        </p>       
+                    </blockquote>
+            </div>   
         </div>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="sal.js"></script>
         <script>
-                sal();
-                AOS.init();
+            var slideIndex = 0;
+            carousel();
 
-                window.onscroll = function(){ fixbar() };
-                var navbar = document.getElementById("navbar");
-                var sticky = navbar.offsetTop;
-
-                function fixbar(){
-                        if(window.pageYOffset >= sticky)
-                                navbar.classList.add("sticky");
-                        else
-                                navbar.classList.remove("sticky");
-                }
-
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block"; 
+            setTimeout(carousel, 2500); // Change image every 3 seconds
+            }
         </script>
-</body>
+    </body>
 </html>
