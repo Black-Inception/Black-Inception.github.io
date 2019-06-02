@@ -6,26 +6,17 @@
     </head>
 
     <body>
-
-        <div class="tooltips text-danger">
-                <span class="tool" id="menu-icon">MENU</span>
-                <p></p>
-                <span class="tool" id="order-icon">ORDER</span>
-                <p></p>
-                <span class="tool" id="reach-icon">REACH</span>
-        </div>
-
         <nav>
-            <button class="box"></button>
+            <button class="box" id="menu"></button>
             <div class="line"></div>
-            <button class="box"></button>
+            <button class="box" id="order"></button>
             <div class="line"></div>
-            <button class="box"></button>
+            <button class="box" id="reach"></button>
         </nav>
         <!--<embed src="song.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />-->
         <div id="fixed-bar" class="mt-4">
             <a href="#fixed-bar">
-                <h4> <span class="text-danger">🍟</span> Zotato</h4>
+                <h4>Potattoo</h4>
             </a>
         </div>
 
@@ -47,6 +38,51 @@
             </div>   
         </div>
 
+        <div class="jumbotron" id="info-box">
+            <h1 class="display-3">Namaste !</h1>
+            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, modi?.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" id="learn-more" role="button" onclick="showInfo();">Learn more</a>
+            </p>
+
+            <div id="learn-more-info">
+                <br>
+                <div class="flex-box">
+                        <img src="sprite/info1.jpg">&nbsp&nbsp&nbsp
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium nesciunt maxime mollitia rem aliquam? Labore cum consectetur earum dignissimos dicta eum repudiandae quasi iure recusandae officiis, tempore fugiat odit.</p>        
+                </div>
+                <br><br>
+                <div class="flex-box">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium nesciunt maxime mollitia rem aliquam? Labore cum consectetur earum dignissimos dicta eum repudiandae quasi iure recusandae officiis, tempore fugiat odit.</p>
+                        &nbsp&nbsp&nbsp <img src="sprite/info2.jpg">          
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div id="menu-container">
+                <h1>MENU</h1>
+                <br><Br>
+                <button type="button" class="btn btn-primary hvr-grow">Breakfast</button>
+                <button type="button" class="btn btn-primary hvr-grow">Lunch</button>
+                <button type="button" class="btn btn-primary hvr-grow">Dinner</button>
+                <button type="button" class="btn btn-primary hvr-grow">All Time</button>
+
+                <br><br><br>    
+                <div class="breakfast">
+                    <img id="b-1" src="sprite/breakfast1.jpg">
+                    <img id="b-2" src="sprite/breakfast2.jpg">
+                    <img id="b-3" src="sprite/breakfast3.jpg">
+                    <img id="b-4" src="sprite/breakfast4.jpg">
+                    <img id="b-5" src="sprite/breakfast5.jpg">
+                </div>
+        </div>
+
+
+        <br><br><br><br><br>
+
         <script>
             var slideIndex = 0;
             carousel();
@@ -61,6 +97,11 @@
             if (slideIndex > x.length) {slideIndex = 1} 
             x[slideIndex-1].style.display = "block"; 
             setTimeout(carousel, 2500); // Change image every 3 seconds
+            }
+
+            function showInfo(){
+                document.querySelector("#learn-more").style.display = "none";
+                document.querySelector("#learn-more-info").style.display = "block";
             }
         </script>
     </body>
