@@ -6,6 +6,7 @@ nav{
     position: fixed;
     margin-left:95%;
     top:40%;
+    width:10%;
 }
 
 .box{
@@ -20,7 +21,7 @@ nav{
     width:2px;
     height:25px;
     background:white;
-    margin-left:40%;
+    margin-left:9%;
 }
 
 /*-----------*/
@@ -46,7 +47,7 @@ nav{
 
 .slide{
     float:left;
-    width:280px;
+    width:20%;
     height:460px;
     margin-left:30%;
     top:20px;
@@ -58,7 +59,7 @@ nav{
 #not-slide
 {
     float:right;
-    width:250px;
+    width:20%;
     margin-right:400px;    
 }
 
@@ -229,3 +230,25 @@ nav{
 .mapouter{
     margin-left:15%;
 }
+
+/*-------------*/
+
+form label{
+    font-size:1.3em;
+}
+
+form input{
+    margin-top:5px;
+    margin-left:1%;
+}
+
+.input-box{
+    width:30%;
+    padding:5px;
+}
+
+.input-box::placeholder{
+    color:gray;
+    font-style: italic;
+}
+

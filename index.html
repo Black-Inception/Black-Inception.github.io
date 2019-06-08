@@ -3,15 +3,29 @@
         <title>Potattoo</title>
         <link rel="stylesheet" href="./bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function(){
+                $(".close").click(function(){
+                    $(this).parent().fadeOut();
+                });
+            });
+        </script>
     </head>
 
     <body>
         <nav>
-            <button class="box" id="menu"></button>
+            <a href="#menu-bookmark">
+                <input type="button" class="box" id="menu">
+            </a>
             <div class="line"></div>
-            <button class="box" id="order"></button>
+            <a href="#book-bookmark">
+                <input type="button" class="box" id="order">
+            </a>
             <div class="line"></div>
-            <button class="box" id="reach"></button>
+            <a href="#menu-bookmark">
+                <input type="button" class="box" id="menu">
+            </a>
         </nav>
         <!--<embed src="song.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />-->
         <div id="fixed-bar" class="mt-4">
@@ -62,6 +76,7 @@
         </div>
 
         <br><br>
+        <a href="#" id="menu-bookmark"></a>
         <div id="menu-container">
                 <h1>MENU</h1>
                 <br><Br>
@@ -133,7 +148,58 @@
 
         <br><br>
         <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Vadodara&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:600px;}</style></div>
+        
+        <a href="#" id="book-bookmark"></a>
+        <br><br><br><br>
+        <div class="book-online">
+            <h1>BOOK A TABLE </h1><br>
+            <div class="alert alert-dismissible alert-warning">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4 class="alert-heading">Warning!</h4>
+                <p class="mb-0">Incase of unavailability of tables, you might have to wait for the next day !</p>
+              </div>
+
+              <div class="card border-dark mb-3">
+                <div class="card-body">
+                  <h4 class="card-title">Time to choose!</h4>
+
+                  <form>
+                    
+                    <label for="companions" class="text-primary">Who's gonna be coming ? </label>
+                    <br>
+                    <input name="companions" type="radio" value="1">&nbsp&nbspYou, the lone ranger </input>
+                    <br><input name="companions" type="radio" value="2">&nbsp&nbspThe cute couple </input>
+                    <br><input name="companions" type="radio" value="3">&nbsp&nbspThe hungry trio </input>
+                    <br><input name="companions" type="radio" value="4">&nbsp&nbspThe potato squad </input>
+                   
+                    <br><br>
+                    <label for="time" class="text-primary">When will we see you ? </label>
+                    <br><input name="time" type="radio" value="1">&nbsp&nbsp1000 hours - 1200 hours</input>
+                    <br><input name="time" type="radio" value="1">&nbsp&nbsp1300 hours- 1500 hours</input>
+                    <br><input name="time" type="radio" value="1">&nbsp&nbsp1700 hours - 1900 hours</input>
+                    <br><input name="time" type="radio" value="1">&nbsp&nbsp2100 hours - 2300 hours</input>
+                    
+                    <br><br>
+                    <label for="phone" class="text-primary">Give us your number !</label>
+                    <br><input type="text" class="input-box" id="phone" placeholder="PHONE NUMBER">
+
+                    <br><br>
+                    <label for="email" class="text-primary">Give us your email !</label>
+                    <br><input type="email" class="input-box" id="email" placeholder="EMAIL ADDRESS">
+
+                    <br><br>
+                    <label for="name" class="text-primary">One last thing, let us know how to identify you</label>
+                    <br><input type="text" class="input-box" id="name" placeholder="YOUR NAME">
+
+                    <br><br>
+                    <input type="submit">
+                  </form>    
+                </div>
+        </div>
+        
+        
         <br><br><br><br><br>
+
 
         <script>
             var slideIndex = 0;
