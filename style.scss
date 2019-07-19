@@ -1,0 +1,49 @@
+body{
+    background-image:url('./sprite/bg8.jpg');
+    background-size:100%;
+    font-family: monospace;
+}
+
+::-webkit-scrollbar{
+    width:0px;
+}
+
+nav{
+    top:90%;
+    height:10%;
+    background:black;
+    color:whitesmoke;
+    opacity:0.5;
+}
+
+nav h4{
+    margin-left:15%;
+}
+
+nav aside{
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    left:80%;
+}
+
+.menu-icon{
+    display:flex;
+    flex-direction: column;
+    margin-left:15px;
+} 
+
+.menu-icon div{
+    width:30px;
+    background:white;
+    height:3px;
+    margin-top:5px;
+}
+
+nav aside:hover{
+    cursor:pointer;
+}
+
+nav aside:hover .menu-icon div{
+    margin-bottom:2px;
+}
